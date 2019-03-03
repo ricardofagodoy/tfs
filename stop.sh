@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-docker-compose down -d server
+docker stop tfs-server
 
 sleep 10
 
-docker-compose down db
+docker stop tfs-db
+
+./clear.sh
